@@ -1,0 +1,97 @@
+[
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\CatchableObject.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\CatchableObject.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Door.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Door.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\InteractiveObject.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\InteractiveObject.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\KeyPass.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\KeyPass.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\MainGameMode.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\MainGameMode.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\PlayerCharacter.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\PlayerCharacter.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Types.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Types.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\WinterRoom.Build.cs",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\WinterRoom.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\WinterRoom.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\WinterRoomGameModeBase.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\WinterRoomGameModeBase.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	}
+]
