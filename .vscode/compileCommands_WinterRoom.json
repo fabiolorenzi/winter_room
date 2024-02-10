@@ -50,6 +50,16 @@
 		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
 	},
 	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Piano.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Piano.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\PlayerCharacter.cpp",
 		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_WinterRoom\\WinterRoom.182.rsp\"",
 		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"

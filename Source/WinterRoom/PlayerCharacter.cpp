@@ -35,6 +35,8 @@ APlayerCharacter::APlayerCharacter()
 	IsFlashlightOn = false;
 	IsFlashlightActivable = true;
 	FlashlightPower = 100.0f;
+	HasPassedNearThePiano = false;
+	HasNearPianoAudioEffectBeenPlayed = false;
 	IsOverlapping = false;
 	HasPlayerOpenBathtub = false;
 	HasPlayerRemovedWallCover = false;
@@ -50,6 +52,11 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent *HitComp, AActor *Othe
 		} else if (OverlappedObject->ActorHasTag("WallCover")) {
 			Cast<AInteractiveObject>(OverlappedObject)->IOWallEvent.AddDynamic(this, &APlayerCharacter::OnRemovingWallCover);
 		};
+	} else if (OtherActor->ActorHasTag("NearPiano")) {
+		HasPassedNearThePiano = true;
+	} else if (OtherActor->ActorHasTag("NearPianoExit") && HasPassedNearThePiano && !HasNearPianoAudioEffectBeenPlayed) {
+		HasNearPianoAudioEffectBeenPlayed = true;
+		PCPianoEvent.Broadcast();
 	} else {
 		IsOverlapping = false;
 		OverlappedObject = nullptr;

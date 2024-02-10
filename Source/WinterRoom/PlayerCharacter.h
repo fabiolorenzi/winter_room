@@ -19,6 +19,8 @@
 class USoundCue;
 class UAudioComponent;
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPCPianoAudioEvent);
+
 UCLASS()
 class WINTERROOM_API APlayerCharacter : public ACharacter
 {
@@ -43,6 +45,8 @@ public:
 		TArray<EKeyType> Keys;
 	UPROPERTY(VisibleAnywhere, BlueprintreadOnly, Category = PlayerVars)
 		TArray<EObjType> Objects;
+	UPROPERTY(BlueprintAssignable, BlueprintCallable)
+		FPCPianoAudioEvent PCPianoEvent;
 		
 	UFUNCTION()
 		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& Sweep);
@@ -58,6 +62,8 @@ public:
 		void PlayActionSound(USoundCue* Sound);
 
 	float FlashlightPower;
+	bool HasPassedNearThePiano;
+	bool HasNearPianoAudioEffectBeenPlayed;
 
 	void ResetTextMessage();
 	void MoveForward(float Axis);
@@ -82,7 +88,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UPROPERTY(EditAnywhere)
-		USoundCue* ActionSound;
 	UAudioComponent* ActionAudioComponent;
 };
