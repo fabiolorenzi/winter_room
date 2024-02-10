@@ -23,8 +23,3 @@ void APiano::BeginPlay()
 	Super::BeginPlay();
 	Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))->PCPianoEvent.AddDynamic(this, &APiano::PlaySound);
 }
-
-void APiano::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}

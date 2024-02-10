@@ -3,23 +3,23 @@
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/Actor.h"
-#include "Piano.generated.h"
+#include "Radio.generated.h"
 
 class USoundCue;
 class UAudioComponent;
 
 UCLASS()
-class WINTERROOM_API APiano : public AActor
+class WINTERROOM_API ARadio : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
-	APiano();
+	ARadio();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PianoBody)
-		UStaticMeshComponent* PianoBody;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = PianoVars)
-		USoundCue* PianoSound;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = RadioBody)
+		UStaticMeshComponent* RadioBody;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = RadioVars)
+		USoundCue* RadioSound;
 
 	UFUNCTION()
 		void PlaySound();

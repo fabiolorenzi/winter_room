@@ -37,6 +37,9 @@ APlayerCharacter::APlayerCharacter()
 	FlashlightPower = 100.0f;
 	HasPassedNearThePiano = false;
 	HasNearPianoAudioEffectBeenPlayed = false;
+	HasPassedNearDiningRoom = false;
+	HasPassedNearTheRadio = false;
+	HasNearRadioAudioEffectBeenPlayed = false;
 	IsOverlapping = false;
 	HasPlayerOpenBathtub = false;
 	HasPlayerRemovedWallCover = false;
@@ -57,6 +60,14 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent *HitComp, AActor *Othe
 	} else if (OtherActor->ActorHasTag("NearPianoExit") && HasPassedNearThePiano && !HasNearPianoAudioEffectBeenPlayed) {
 		HasNearPianoAudioEffectBeenPlayed = true;
 		PCPianoEvent.Broadcast();
+	} else if (OtherActor->ActorHasTag("DiningRoomPassing") && !HasPassedNearDiningRoom) {
+		HasPassedNearDiningRoom = true;
+		PCDNSEvent.Broadcast();
+	} else if (OtherActor->ActorHasTag("NearRadio")) {
+		HasPassedNearTheRadio = true;
+	} else if (OtherActor->ActorHasTag("NearRadioExit") && HasPassedNearTheRadio && !HasNearRadioAudioEffectBeenPlayed) {
+		HasNearRadioAudioEffectBeenPlayed = true;
+		PCRadioEvent.Broadcast();
 	} else {
 		IsOverlapping = false;
 		OverlappedObject = nullptr;

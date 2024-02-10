@@ -10,6 +10,16 @@
 		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
 	},
 	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\DiningRoomSound.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\DiningRoomSound.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Door.cpp",
 		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
 		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
@@ -66,6 +76,16 @@
 	},
 	{
 		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\PlayerCharacter.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Radio.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\WinterRoom\\\\Source\\\\WinterRoom\\\\Radio.h",
 		"command": "cl.exe @\"D:\\Epic Games\\Projects\\WinterRoom\\.vscode\\compileCommands_Default\\WinterRoom.182.rsp\"",
 		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
 	},
