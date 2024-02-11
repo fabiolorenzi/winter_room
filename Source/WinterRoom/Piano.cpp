@@ -1,7 +1,6 @@
 #include "Piano.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
-#include "Components/AudioComponent.h"
 
 #include "PlayerCharacter.h"
 
@@ -15,7 +14,7 @@ APiano::APiano()
 
 void APiano::PlaySound()
 {
-	ActionAudioComponent = UGameplayStatics::SpawnSound2D(this, PianoSound, 1.0f);
+	UGameplayStatics::PlaySoundAtLocation(this, PianoSound, FVector(-362.0f, -1067.0f, -193.0f), 1.0f);
 }
 
 void APiano::BeginPlay()

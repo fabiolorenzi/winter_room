@@ -1,7 +1,6 @@
 #include "Radio.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
-#include "Components/AudioComponent.h"
 
 #include "PlayerCharacter.h"
 
@@ -15,7 +14,7 @@ ARadio::ARadio()
 
 void ARadio::PlaySound()
 {
-	ActionAudioComponent = UGameplayStatics::SpawnSound2D(this, RadioSound, 1.0f);
+	UGameplayStatics::PlaySoundAtLocation(this, RadioSound, FVector(-489.0f, -1551.0f, 417.0f), 1.0f);
 }
 
 void ARadio::BeginPlay()

@@ -6,7 +6,6 @@
 #include "Radio.generated.h"
 
 class USoundCue;
-class UAudioComponent;
 
 UCLASS()
 class WINTERROOM_API ARadio : public AActor
@@ -26,7 +25,4 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-
-public:	
-	UAudioComponent* ActionAudioComponent;
 };
