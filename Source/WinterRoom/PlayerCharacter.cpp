@@ -32,6 +32,7 @@ APlayerCharacter::APlayerCharacter()
 	FollowCamera->bUsePawnControlRotation = true;
 
 	IsPaused = false;
+	IsGameFinished = false;
 	IsFlashlightOn = false;
 	IsFlashlightActivable = true;
 	FlashlightPower = 100.0f;
@@ -108,6 +109,12 @@ void APlayerCharacter::PlayActionSound(USoundCue* Sound)
 	ActionAudioComponent = UGameplayStatics::SpawnSound2D(this, Sound, 1.0f);
 }
 
+void APlayerCharacter::EndGame()
+{
+	PauseGame();
+	IsGameFinished = true;
+}
+
 void APlayerCharacter::MoveForward(float Axis)
 {
 	const FRotator Rotation = Controller->GetControlRotation();
@@ -142,6 +149,9 @@ void APlayerCharacter::ManageAction()
 		} else if (OverlappedObject->ActorHasTag("Door")) {
 			Cast<ADoor>(OverlappedObject)->DoorEvent.AddDynamic(this, &APlayerCharacter::UpdateTextMessage);
 			Cast<ADoor>(OverlappedObject)->DoorAudioEvent.AddDynamic(this, &APlayerCharacter::PlayActionSound);
+			if (OverlappedObject->ActorHasTag("ExitDoor")) {
+				Cast<ADoor>(OverlappedObject)->DoorExitEvent.AddDynamic(this, &APlayerCharacter::EndGame);
+			};
 			Cast<ADoor>(OverlappedObject)->CheckToOpenDoor(Keys);
 		} else if (OverlappedObject->ActorHasTag("InteractiveObject")) {
 			Cast<AInteractiveObject>(OverlappedObject)->IOMessageEvent.AddDynamic(this, &APlayerCharacter::UpdateTextMessage);
@@ -185,14 +195,15 @@ void APlayerCharacter::QuitGame()
 
 void APlayerCharacter::PauseGame()
 {
-	IsPaused = !IsPaused;
+	if (!IsGameFinished) {
+		IsPaused = !IsPaused;
 
-	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+		APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
 
-	PlayerController->Pause();
-	PlayerController->bShowMouseCursor = IsPaused;
-	PlayerController->bEnableClickEvents = IsPaused;
-	PlayerController->bEnableMouseOverEvents = IsPaused;
+		PlayerController->Pause();
+		PlayerController->bShowMouseCursor = IsPaused;
+		PlayerController->bEnableClickEvents = IsPaused;
+	};
 }
 
 void APlayerCharacter::BeginPlay()

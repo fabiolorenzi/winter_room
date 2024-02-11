@@ -42,6 +42,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PlayerVars)
 		bool IsPaused;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PlayerVars)
+		bool IsGameFinished;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PlayerVars)
 	    FString TextMessage;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PlayerVars)
 		TArray<EKeyType> Keys;
@@ -66,6 +68,8 @@ public:
 		void UpdateTextMessage(FString Value);
 	UFUNCTION()
 		void PlayActionSound(USoundCue* Sound);
+	UFUNCTION()
+		void EndGame();
 
 	float FlashlightPower;
 	bool HasPassedNearThePiano;

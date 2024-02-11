@@ -11,6 +11,7 @@ class USoundCue;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDoorEvent, FString, Value);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDoorAudioEvent, USoundCue*, Sound);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDoorExitEvent);
 
 UCLASS()
 class WINTERROOM_API ADoor : public AActor
@@ -30,6 +31,8 @@ public:
 		FDoorEvent DoorEvent;
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 		FDoorAudioEvent DoorAudioEvent;
+	UPROPERTY(BlueprintAssignable, BlueprintCallable)
+		FDoorExitEvent DoorExitEvent;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = DoorVars)
 		EKeyType KeyToUnlock;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = DoorVars)

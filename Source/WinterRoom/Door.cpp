@@ -32,6 +32,9 @@ void ADoor::OpenDoor()
 	DoorRotation.Yaw += 90.0f;
 	RollingSection->SetRelativeRotation(DoorRotation);
 	DoorAudioEvent.Broadcast(DoorOpenSound);
+	if (KeyToUnlock == EKeyType::Exit) {
+		DoorExitEvent.Broadcast();
+	};
 }
 
 void ADoor::CheckToOpenDoor(TArray<EKeyType> Keys)

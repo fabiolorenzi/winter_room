@@ -14,7 +14,7 @@ ADiningRoomSound::ADiningRoomSound()
 
 void ADiningRoomSound::PlaySound()
 {
-	UGameplayStatics::PlaySoundAtLocation(this, DNSSound, FVector((-900.0f, -1312.0f, 44.0f)), 1.0f);
+	AudioComponent = UGameplayStatics::SpawnSound2D(this, DNSSound, 1.0f);
 }
 
 void ADiningRoomSound::BeginPlay()

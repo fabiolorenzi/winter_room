@@ -6,6 +6,7 @@
 #include "DiningRoomSound.generated.h"
 
 class USoundCue;
+class UAudioComponent;
 
 UCLASS()
 class WINTERROOM_API ADiningRoomSound : public AActor
@@ -22,6 +23,8 @@ public:
 
 	UFUNCTION()
 		void PlaySound();
+
+	UAudioComponent* AudioComponent;
 
 protected:
 	virtual void BeginPlay() override;
