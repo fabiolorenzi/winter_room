@@ -111,8 +111,9 @@ void APlayerCharacter::PlayActionSound(USoundCue* Sound)
 
 void APlayerCharacter::EndGame()
 {
-	PauseGame();
 	IsGameFinished = true;
+	FTimerHandle TimerHandle;
+	GetWorldTimerManager().SetTimer(TimerHandle, this, &APlayerCharacter::PauseGame, 2.0f, false);
 }
 
 void APlayerCharacter::MoveForward(float Axis)
