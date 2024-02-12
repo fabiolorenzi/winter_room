@@ -182,14 +182,14 @@ void APlayerCharacter::ManageFlashlight()
 
 void APlayerCharacter::RestartGame()
 {
-	if (IsPaused) {
+	if (IsPaused || IsGameFinished) {
 		UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 	};
 }
 
 void APlayerCharacter::QuitGame()
 {
-	if (IsPaused) {
+	if (IsPaused || IsGameFinished) {
 		FGenericPlatformMisc::RequestExit(false);
 	};
 }
